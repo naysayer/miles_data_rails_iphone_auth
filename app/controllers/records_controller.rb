@@ -22,7 +22,8 @@ class RecordsController < ApplicationController
 	#
 	# before_filter :authenticate, :except => :create
   before_filter :authenticate_user!
-	before_filter :api_authenticate, :only => :create
+  before_filter :set_record_var, :only => [:edit, :update, :destroy, :show]
+	# before_filter :api_authenticate, :only => :create
 	
   # GET /records
   # GET /records.json
@@ -31,9 +32,9 @@ class RecordsController < ApplicationController
 		if params[:year]
 			start_date = DateTime.new(params[:year].to_i, 1, 1)
 			finish_date = DateTime.new(params[:year].to_i, 12, 31)
-			@records = Record.where(["created_at >= ? AND created_at <= ?", start_date, finish_date]).order("created_at DESC")
+			@records = Record.where(["user_id = ? AND created_at >= ? AND created_at <= ?", current_user.id, start_date, finish_date]).order("created_at DESC")
 		else
-			@records = Record.order("created_at DESC")
+			@records = Record.where(["user_id = ?", current_user.id]).order("created_at DESC")
 		end 
 
     respond_to do |format|
@@ -46,18 +47,26 @@ class RecordsController < ApplicationController
   # GET /records/1/edit
   def edit
     @record = Record.find(params[:id])
+    @record.user_id == current_user.id ? @record : redirect_home
+  end
+
+  def new
+    @record = current_user.records.new
   end
 
   # POST /records
   # POST /records.json
   def create
-    @record = Record.new(params[:record])
+    @record = current_user.records.new(params[:record])
 
     respond_to do |format|
       if @record.save
+        format.html {redirect_to @record} 
         format.json { render json: @record, status: :created, location: @record }
+        flash[:notice] = "Your record has been successfully created."
       else
-        format.json { render json: @record.errors, status: :unprocessable_entity }
+        format.html {render action: "new"}
+        flash[:notice] = @records.errors.full_messages.to_sentence
       end
     end
   end
@@ -65,8 +74,6 @@ class RecordsController < ApplicationController
   # PUT /records/1
   # PUT /records/1.json
   def update
-    @record = Record.find(params[:id])
-
     respond_to do |format|
       if @record.update_attributes(params[:record])
         format.html { redirect_to @record, notice: 'Record was successfully updated.' }
@@ -81,7 +88,6 @@ class RecordsController < ApplicationController
   # DELETE /records/1
   # DELETE /records/1.json
   def destroy
-    @record = Record.find(params[:id])
     @record.destroy
 
     respond_to do |format|
@@ -89,8 +95,16 @@ class RecordsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def show
+  end
 	
 	protected
+
+  def set_record_var
+    @record = Record.find(params[:id])
+    @record.user_id == current_user.id ? @record : redirect_home
+  end
 
 		# def authenticate
 		# 	authenticate_or_request_with_http_basic do |username, password|
@@ -98,7 +112,7 @@ class RecordsController < ApplicationController
 		#   end
 		# end
 		
-		def api_authenticate
-			render(json: {:error => "401 Forbidden"}, :status => :forbidden) if params['api_key'].nil? || params['api_key'] != API_AUTH['key']
-		end
+		# def api_authenticate
+		# 	render(json: {:error => "401 Forbidden"}, :status => :forbidden) if params['api_key'].nil? || params['api_key'] != API_AUTH['key']
+		# end
 end

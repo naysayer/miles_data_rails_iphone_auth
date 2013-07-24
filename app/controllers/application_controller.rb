@@ -25,4 +25,9 @@ class ApplicationController < ActionController::Base
 		headers['Access-Control-Allow-Origin'] = '*' 
 		headers['Access-Control-Request-Method'] = 'POST' 
 	end
+
+	def redirect_home
+		redirect_to root_path
+		flash[:notice] = "Unable to process your request"
+	end
 end

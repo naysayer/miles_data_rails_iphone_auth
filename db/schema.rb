@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130724202430) do
+ActiveRecord::Schema.define(:version => 20130724214249) do
 
   create_table "records", :force => true do |t|
     t.boolean  "start_use_coords"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(:version => 20130724202430) do
     t.text     "car"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
+    t.integer  "user_id"
   end
 
   create_table "users", :force => true do |t|

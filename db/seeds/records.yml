@@ -1,0 +1,136 @@
+records:
+- car: Honda
+  reason: 'Lunch Meeting with Donor: Aldous Tsang'
+  start_location: 'Home'
+  start_odometer: 60859
+  start_use_coords: false
+  stop_location: '2889 Park Avenue, Tustin, CA 92782'
+  stop_odometer: 60902
+  stop_use_coords: false
+  created_at: 20130403
+- car: Honda
+  reason: 'Coffee with Donor: Brian Sueyoshi'
+  start_location: '2889 Park Avenue, Tustin, CA 92782'
+  start_odometer: 60902
+  start_use_coords: false
+  stop_location: '3142 Yorba Linda Blvd, Fullerton, CA'
+  stop_odometer: 60919
+  stop_use_coords: false
+  created_at: 20130403
+- car: Honda
+  reason: 'Return Home'
+  start_location: '3142 Yorba Linda Blvd, Fullerton, CA'
+  start_odometer: 60919
+  start_use_coords: false
+  stop_location: 'Home'
+  stop_odometer: 60952
+  stop_use_coords: false
+  created_at: 20130403
+- car: Honda
+  reason: 'Meeting with Donor: Reny Family'
+  start_location: 'Home'
+  start_odometer: 61100
+  start_use_coords: false
+  stop_location: '6324 N Del Loma, San Gabriel, Ca 91775'
+  stop_odometer: 61104
+  stop_use_coords: false
+  created_at: 20130415
+- car: Honda
+  reason: 'Return Home'
+  start_location: '6324 N Del Loma, San Gabriel, Ca 91775'
+  start_odometer: 61104
+  start_use_coords: false
+  stop_location: 'Home'
+  stop_odometer: 61108
+  stop_use_coords: false
+  created_at: 20130415
+- car: Honda
+  reason: 'Meet Client'
+  start_location: 'Home'
+  start_odometer: 61386
+  start_use_coords: false
+  stop_location: '1605 East Elizabeth Street Pasadena, CA 91104'
+  stop_odometer: 61402
+  stop_use_coords: false
+  created_at: 20130422
+- car: Honda
+  reason: 'Return Home'
+  start_location: '1605 East Elizabeth Street Pasadena, CA 91104'
+  start_odometer: 61402
+  start_use_coords: false
+  stop_location: 'Home'
+  stop_odometer: 61418
+  stop_use_coords: false
+  created_at: 20130422
+- car: Honda
+  reason: 'Meeting with Donor: Mike Young'
+  start_location: Home
+  start_odometer: 61430
+  start_use_coords: false
+  stop_location: '8700 Wendon St. San Gabriel, Ca 91775'
+  stop_odometer: 61435
+  stop_use_coords: false
+  created_at: 20130424
+- car: Honda
+  reason: 'To Lunch Place for Meeting'
+  start_location: '8700 Wendon St. San Gabriel, Ca 91775'
+  start_odometer: 61435
+  start_use_coords: false
+  stop_location: '5829 Rosemead Boulevard, Temple City, CA 91780'
+  stop_odometer: 61436
+  stop_use_coords: false
+  created_at: 20130424
+- car: Honda
+  reason: 'Return from Lunch with Donor'
+  start_location: '5829 Rosemead Boulevard, Temple City, CA 91780'
+  start_odometer: 61436
+  start_use_coords: false
+  stop_location: '8700 Wendon St. San Gabriel, Ca 91775'
+  stop_odometer: 61437
+  stop_use_coords: false
+  created_at: 20130424
+- car: Honda
+  reason: 'Return Home'
+  start_location: '8700 Wendon St. San Gabriel, Ca 91775'
+  start_odometer: 61437
+  start_use_coords: false
+  stop_location: 'Home'
+  stop_odometer: 61442
+  stop_use_coords: false
+  created_at: 20130424
+- car: Honda
+  reason: 'Meeting with Supporter: Tremper Family'
+  start_location: Home
+  start_odometer: 61442
+  start_use_coords: false
+  stop_location: '8337 Woodlawn Ave, San Gabriel, CA 91775'
+  stop_odometer: 61447
+  stop_use_coords: false
+  created_at: 20130424
+- car: Honda
+  reason: 'Return Home'
+  start_location: '8337 Woodlawn Ave, San Gabriel, CA 91775'
+  start_odometer: 61447
+  start_use_coords: false
+  stop_location: 'Home'
+  stop_odometer: 61452
+  stop_use_coords: false
+  created_at: 20130424
+- car: Acura
+  reason: 'Meeting with Donors: Oberlander Family'
+  start_location: Home
+  start_odometer: 168657
+  start_use_coords: false
+  stop_location: '6362 Echo Hills Lane, Fontana, CA'
+  stop_odometer: 168702
+  stop_use_coords: false
+  created_at: 20130428
+- car: Acura
+  reason: 'Return Home'
+  start_location: '6362 Echo Hills Lane, Fontana, CA'
+  start_odometer: 168708
+  start_use_coords: false
+  stop_location: 'Home'
+  stop_odometer: 168753
+  stop_use_coords: false
+  created_at: 20130428

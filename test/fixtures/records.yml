@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  start_use_coords: false
+  stop_use_coords: false
+  start_location: MyText
+  stop_location: MyText
+  start_odometer: MyText
+  stop_odometer: MyText
+  reason: MyText
+  start_lat: MyText
+  start_long: MyText
+  stop_lat: MyText
+  stop_long: MyText
+  car: MyText
+
+two:
+  start_use_coords: false
+  stop_use_coords: false
+  start_location: MyText
+  stop_location: MyText
+  start_odometer: MyText
+  stop_odometer: MyText
+  reason: MyText
+  start_lat: MyText
+  start_long: MyText
+  stop_lat: MyText
+  stop_long: MyText
+  car: MyText

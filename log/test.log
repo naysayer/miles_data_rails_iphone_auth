@@ -1,0 +1,58 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "records"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "records" ("start_use_coords", "stop_use_coords", "start_location", "stop_location", "start_odometer", "stop_odometer", "reason", "start_lat", "start_long", "stop_lat", "stop_long", "car", "created_at", "updated_at", "id") VALUES ('f', 'f', 'MyText', 'MyText', 'MyText', 'MyText', 'MyText', 'MyText', 'MyText', 'MyText', 'MyText', 'MyText', '2013-07-24 19:30:29', '2013-07-24 19:30:29', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "records" ("start_use_coords", "stop_use_coords", "start_location", "stop_location", "start_odometer", "stop_odometer", "reason", "start_lat", "start_long", "stop_lat", "stop_long", "car", "created_at", "updated_at", "id") VALUES ('f', 'f', 'MyText', 'MyText', 'MyText', 'MyText', 'MyText', 'MyText', 'MyText', 'MyText', 'MyText', 'MyText', '2013-07-24 19:30:29', '2013-07-24 19:30:29', 298486374)
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mRecord Load (0.3ms)[0m  [1mSELECT "records".* FROM "records" WHERE "records"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "records" 
+Processing by RecordsController#create as HTML
+  Parameters: {"record"=>{"car"=>"MyText", "reason"=>"MyText", "start_lat"=>"MyText", "start_location"=>"MyText", "start_long"=>"MyText", "start_odometer"=>"MyText", "start_use_coords"=>false, "stop_lat"=>"MyText", "stop_location"=>"MyText", "stop_long"=>"MyText", "stop_odometer"=>"MyText", "stop_use_coords"=>false}}
+Filter chain halted as :api_authenticate rendered or redirected
+Completed 403 Forbidden in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "records" [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mRecord Load (0.1ms)[0m  SELECT "records".* FROM "records" WHERE "records"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "records" [0m
+Processing by RecordsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "records" 
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mRecord Load (0.1ms)[0m  [1mSELECT "records".* FROM "records" WHERE "records"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by RecordsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mRecord Load (0.1ms)[0m  SELECT "records".* FROM "records" WHERE "records"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by RecordsController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mRecord Load (0.1ms)[0m  [1mSELECT "records".* FROM "records" WHERE "records"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by RecordsController#new as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mRecord Load (0.1ms)[0m  SELECT "records".* FROM "records" WHERE "records"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by RecordsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mRecord Load (0.1ms)[0m  [1mSELECT "records".* FROM "records" WHERE "records"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by RecordsController#update as HTML
+  Parameters: {"record"=>{"car"=>"MyText", "reason"=>"MyText", "start_lat"=>"MyText", "start_location"=>"MyText", "start_long"=>"MyText", "start_odometer"=>"MyText", "start_use_coords"=>false, "stop_lat"=>"MyText", "stop_location"=>"MyText", "stop_long"=>"MyText", "stop_odometer"=>"MyText", "stop_use_coords"=>false}, "id"=>"980190962"}
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction

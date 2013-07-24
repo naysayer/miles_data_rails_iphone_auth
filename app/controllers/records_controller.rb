@@ -20,7 +20,8 @@
 class RecordsController < ApplicationController
 	# Add authentication
 	#
-	before_filter :authenticate, :except => :create
+	# before_filter :authenticate, :except => :create
+  before_filter :authenticate_user!
 	before_filter :api_authenticate, :only => :create
 	
   # GET /records
@@ -91,11 +92,11 @@ class RecordsController < ApplicationController
 	
 	protected
 
-		def authenticate
-			authenticate_or_request_with_http_basic do |username, password|
-		    username == BASIC_AUTH['username'] && password == BASIC_AUTH['password']
-		  end
-		end
+		# def authenticate
+		# 	authenticate_or_request_with_http_basic do |username, password|
+		#     username == BASIC_AUTH['username'] && password == BASIC_AUTH['password']
+		#   end
+		# end
 		
 		def api_authenticate
 			render(json: {:error => "401 Forbidden"}, :status => :forbidden) if params['api_key'].nil? || params['api_key'] != API_AUTH['key']

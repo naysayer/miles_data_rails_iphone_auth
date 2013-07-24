@@ -1,9 +1,12 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
-
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
+gem 'populator'
+gem 'faker'
+gem 'devise'
+gem 'geocoder'
 
 group :development do
   gem 'sqlite3'

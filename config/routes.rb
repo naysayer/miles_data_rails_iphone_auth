@@ -1,6 +1,11 @@
 Milesdatas::Application.routes.draw do
+  devise_for :users
+
   resources :records
 
+  authenticated :user do
+    root :to => "records#index"
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -51,7 +56,7 @@ Milesdatas::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'records#index'
+  root :to => redirect("/users/sign_in")
 
   # See how all your routes lay out with "rake routes"
 

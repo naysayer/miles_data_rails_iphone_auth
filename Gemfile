@@ -14,7 +14,11 @@ end
 group :production do
   gem 'pg'
 end
-
+group :test, :development do
+  gem "rspec-rails", "~> 2.12.2"
+  gem "factory_girl_rails"
+  gem "timecop"
+end
 
 # Gems used only for assets and not required
 # in production environments by default.

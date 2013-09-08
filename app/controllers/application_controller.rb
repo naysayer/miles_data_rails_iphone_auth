@@ -40,7 +40,7 @@ class ApplicationController < ActionController::Base
 		  #   return false
 		  # end
 		else
-		  render :status => 401, :json => {:error => "Please login to continue"}
+		  render :json=>{:success=>false, :message=>"Please login to continue"}, :status => 401
 		  return false
 		end
 	end

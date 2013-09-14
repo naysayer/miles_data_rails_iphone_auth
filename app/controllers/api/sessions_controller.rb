@@ -12,7 +12,7 @@ class Api::SessionsController < Api::BaseApiController
 	 
 	    if resource.valid_password?(params[:user_login][:password])
 	      sign_in("user", resource)
-	      resource.reset_authentication_token! if resource.authentication_token == nil
+	      User.generate_new_auth_token(resource) if resource.token_expired?
 	      render :json=> {:success=>true, :auth_token=>resource.authentication_token, :email=>resource.email}
 	      return
 	    end

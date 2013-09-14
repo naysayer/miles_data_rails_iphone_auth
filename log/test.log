@@ -183,3 +183,439 @@ Binary data inserted for `string` type on column `encrypted_password`
   [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
   [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" LIMIT 1
   [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.8ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.8ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'ogFzCtJ2rnE3WvBpEqPh' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["authentication_token", "ogFzCtJ2rnE3WvBpEqPh"], ["created_at", Sat, 14 Sep 2013 08:12:37 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$v9Cpyh4ZGMSTyDJbsv8bROxhdr3w9ieirUs9GICuQjvdgFOGaNaHu"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Sat, 14 Sep 2013 08:12:37 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'LP7UUzruEHyzv5wsHxCP' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["authentication_token", "LP7UUzruEHyzv5wsHxCP"], ["created_at", Sat, 14 Sep 2013 08:12:37 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$AVtgjNgFuW94E3jqhlYH5O//1YNn8E6n2HqCSk/uJbDxZNNTbjRgS"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Sat, 14 Sep 2013 08:12:37 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.9ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = '9rtc7PsTVEQHxNRqjhbw' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (3.2ms)[0m  [1mINSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["authentication_token", "9rtc7PsTVEQHxNRqjhbw"], ["created_at", Sat, 14 Sep 2013 19:29:19 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$szpVaznFwFNFxT4l91GjluasVaZfJmDn6CKwur/RnaCDqrR9.at9G"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Sat, 14 Sep 2013 19:29:19 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'yNc3cegiqkpe7UETx2nt' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["authentication_token", "yNc3cegiqkpe7UETx2nt"], ["created_at", Sat, 14 Sep 2013 19:29:19 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$eb4ijoNITbwy/cq8sEhPtek0GVlZV9i1tTu8jIXf1CmptTs6Bsqy2"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Sat, 14 Sep 2013 19:29:19 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'KC8eyYfpp7deHeeSW2p2' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["authentication_token", "KC8eyYfpp7deHeeSW2p2"], ["created_at", Sat, 14 Sep 2013 19:29:30 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$CMLkupSJFRflp3Ek.5dGWOq.qG5vWOI1TZ6CCv.sjKix54T2ugLSm"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Sat, 14 Sep 2013 19:29:30 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = '3goMmQmqBbs6HDj9ob23' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["authentication_token", "3goMmQmqBbs6HDj9ob23"], ["created_at", Sat, 14 Sep 2013 19:29:30 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$X0Xl9mrTt5GYBOuCXZZHjevMhW6KYtnT5rA0EFOUj92FtYVSlZkF2"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Sat, 14 Sep 2013 19:29:30 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["authentication_token", "authtoken"], ["created_at", Sat, 14 Sep 2013 19:30:37 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$qS2RG9Fcu2zPaoZuYdCeVOHbYvDbzYKYy/QQRTIGg5TzlvaGBgoJW"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Sat, 14 Sep 2013 19:30:37 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'wwAsihyUTp22jDKUEctJ' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["authentication_token", "wwAsihyUTp22jDKUEctJ"], ["created_at", Sat, 14 Sep 2013 19:30:37 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$Xp7H9uukIZNw7WHmLG3EkOOWUDsbCoSU.0Qeh3tk0niV3NDKINIMe"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Sat, 14 Sep 2013 19:30:37 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["authentication_token", "authtoken"], ["created_at", Sat, 14 Sep 2013 19:31:15 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$Bvc9sRxrCNMGcwAc0hjGHO4xeajIR7Zln5Wt5ORWCbwbJRwevaVpq"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Sat, 14 Sep 2013 19:31:15 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'TPqkizvYoKkU1cEDEq5R' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["authentication_token", "TPqkizvYoKkU1cEDEq5R"], ["created_at", Sat, 14 Sep 2013 19:31:15 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$bhD72SUUSZ7HSQwSkBn.Duh7.d3/CZh6o8dmRl4Y..xWnznvgff1e"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Sat, 14 Sep 2013 19:31:15 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'TzZTm7pMio35XLqmCWRS' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'y1CfAsb1sxcby6DxzQ4D' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'aQuSsMoAywRn78T5rMp1' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["authentication_token", "aQuSsMoAywRn78T5rMp1"], ["created_at", Sat, 14 Sep 2013 19:37:33 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$3roIdwldPFI4Z/Li7BbU2uIT4FDU/WledVj0g45To/0Et56CipW8."], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sat, 14 Sep 2013 19:37:33 UTC +00:00], ["updated_at", Sat, 14 Sep 2013 19:37:33 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["authentication_token", "authtoken"], ["created_at", Sat, 14 Sep 2013 19:37:33 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$XBaRRxxiey2qnoV4JwE92.LF8SyNTHQTOxNN.SZq4XUfvqDKaxT.G"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sat, 14 Sep 2013 19:37:33 UTC +00:00], ["updated_at", Sat, 14 Sep 2013 19:37:33 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'z1Nsfvxk7RL17pjy3oPW' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["authentication_token", "z1Nsfvxk7RL17pjy3oPW"], ["created_at", Sat, 14 Sep 2013 19:37:33 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$HzdZcMiLjiMiiBViXl7n9egjmi9Em2gIZck48NWwtCbd7YrtIHyJm"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sat, 14 Sep 2013 19:37:33 UTC +00:00], ["updated_at", Sat, 14 Sep 2013 19:37:33 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (2.1ms)[0m  INSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["authentication_token", "authtoken"], ["created_at", Sat, 14 Sep 2013 19:38:04 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$hHkUNf.Sg7zA3N8/bCr.teL4i5AH0FnFweRIUnbVGgboW50.ARLdG"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sat, 14 Sep 2013 19:38:04 UTC +00:00], ["updated_at", Sat, 14 Sep 2013 19:38:04 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'yoXSp5vb5MVJKx8vixXX' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["authentication_token", "yoXSp5vb5MVJKx8vixXX"], ["created_at", Sat, 14 Sep 2013 19:38:04 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$m63dM3Zn26A0T/0pyVORtuT/ROZiTu97m7/z6pon1v044HK/5IbTq"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sat, 14 Sep 2013 19:38:04 UTC +00:00], ["updated_at", Sat, 14 Sep 2013 19:38:04 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'ptaytVHTJpsoGhy9XzJy' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["authentication_token", "ptaytVHTJpsoGhy9XzJy"], ["created_at", Sat, 14 Sep 2013 19:38:04 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$QHblnV5.l2sRGAeE1uHw9uLQ6uVrS6RZhHmBcM9zTrg4TlS8kUvty"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sat, 14 Sep 2013 19:38:04 UTC +00:00], ["updated_at", Sat, 14 Sep 2013 19:38:04 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'xjL9Sdn24CxwnVr3tCny' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (2.3ms)[0m  [1mINSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["authentication_token", "xjL9Sdn24CxwnVr3tCny"], ["created_at", Sat, 14 Sep 2013 19:39:11 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$d7s4gD4GbK3Znalt3vmfF.52JERDvEoxe70DYVFmW7mCSz1oIkq8q"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sat, 14 Sep 2013 19:39:11 UTC +00:00], ["updated_at", Sat, 14 Sep 2013 19:39:11 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'zYqbs3TrkwyDqqj5TuUU' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["authentication_token", "zYqbs3TrkwyDqqj5TuUU"], ["created_at", Sat, 14 Sep 2013 19:39:11 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$JVHmYysUnXxFT1kZ/5nK7OBuIeCskHyCSiSMT9MVa5kYTgQuphL4e"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sat, 14 Sep 2013 19:39:11 UTC +00:00], ["updated_at", Sat, 14 Sep 2013 19:39:11 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["authentication_token", "authtoken"], ["created_at", Sat, 14 Sep 2013 19:39:11 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$KRzQbAuwHjsmeeaWPyNVvOH.VR6UXBp6QvSiQJRNAD9OVl5.ag5dq"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sat, 14 Sep 2013 19:39:11 UTC +00:00], ["updated_at", Sat, 14 Sep 2013 19:39:11 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.8ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'JizjZmt3aPaDiqqg6U3g' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["authentication_token", "JizjZmt3aPaDiqqg6U3g"], ["created_at", Sat, 14 Sep 2013 19:41:15 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$WLFWlR6.PY/lNDutOrvq9eh4R7cxz6Ef10EVgZ0Xw9B3tkP8Mf56u"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sat, 14 Sep 2013 19:41:15 UTC +00:00], ["updated_at", Sat, 14 Sep 2013 19:41:15 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["authentication_token", "authtoken"], ["created_at", Sat, 14 Sep 2013 19:41:15 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$AARWCMLm3GyfnBWWcASCc.HGEqgIDi6IzHMbZ3E2DoU7JHvEZX0tO"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sat, 14 Sep 2013 19:41:15 UTC +00:00], ["updated_at", Sat, 14 Sep 2013 19:41:15 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'yz7Dd9ixC1gUye6NsgRE' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["authentication_token", "yz7Dd9ixC1gUye6NsgRE"], ["created_at", Sun, 22 Sep 2013 19:41:15 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$dI1YdMe7MgSadOXKofIm5eRyuJNKTWtvWbdC5OwM8T.uXfhZACAUC"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sun, 22 Sep 2013 19:41:15 UTC +00:00], ["updated_at", Sun, 22 Sep 2013 19:41:15 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["authentication_token", "authtoken"], ["created_at", Sat, 14 Sep 2013 19:41:27 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$KX8r5.jskQgwwQElwL7If.QRLvZV8AwUeMSqLwzG2oi/Rb6BZcKSe"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sat, 14 Sep 2013 19:41:27 UTC +00:00], ["updated_at", Sat, 14 Sep 2013 19:41:27 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'xDjYeLCzUEqkmiiTQ9qX' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["authentication_token", "xDjYeLCzUEqkmiiTQ9qX"], ["created_at", Sat, 14 Sep 2013 19:41:27 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$7HoyA9RdkTNw3.N5rsn4Xuo4EMqryHK.adGNAq8e93J7m/K612QY2"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sat, 14 Sep 2013 19:41:27 UTC +00:00], ["updated_at", Sat, 14 Sep 2013 19:41:27 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'GVbDhyq6vt4yv4erpSe8' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["authentication_token", "GVbDhyq6vt4yv4erpSe8"], ["created_at", Sat, 14 Sep 2013 19:41:27 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$xtvVKVNKEOshIYByR6oLAurUHpgeKG5BJAUGX6.Lgq0LR5ommycaK"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sat, 14 Sep 2013 19:41:27 UTC +00:00], ["updated_at", Sat, 14 Sep 2013 19:41:27 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'CpeudyqmXpyiC3aRn8oC' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["authentication_token", "CpeudyqmXpyiC3aRn8oC"], ["created_at", Sat, 14 Sep 2013 19:43:38 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$kXHQ/STBBSNsaigx/Jtzc.jcGzVEwzEYFpBv.8HzfPluxyyB.58Wi"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sat, 14 Sep 2013 19:43:38 UTC +00:00], ["updated_at", Sat, 14 Sep 2013 19:43:38 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["authentication_token", "authtoken"], ["created_at", Sat, 14 Sep 2013 19:43:38 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$6DPQ80/w7I/ABJuLQr2H7e5lGtzX1DjmOUJFTmB43KD2rNDfbGpyO"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sat, 14 Sep 2013 19:43:38 UTC +00:00], ["updated_at", Sat, 14 Sep 2013 19:43:38 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'vpMxWK4ZFKtbMxBrGjst' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["authentication_token", "vpMxWK4ZFKtbMxBrGjst"], ["created_at", Sat, 14 Sep 2013 19:43:38 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$xcwHNRaqU6BrCVpUT/yb5ux001jSG/BPC.oq4Av96M5g171oQ8TZq"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sat, 14 Sep 2013 19:43:38 UTC +00:00], ["updated_at", Sat, 14 Sep 2013 19:43:38 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'si8ECpv3tppd2QB8gMy6' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["authentication_token", "si8ECpv3tppd2QB8gMy6"], ["created_at", Sat, 14 Sep 2013 19:51:59 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$Jh9Ri5M.q13lII4MwIv9R.TGIJOdcs558Owz9Iq0ve.s.vVaEpkkq"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sat, 14 Sep 2013 19:51:59 UTC +00:00], ["updated_at", Sat, 14 Sep 2013 19:51:59 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = '1szSGPDM9yebTzE5fUBY' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["authentication_token", "1szSGPDM9yebTzE5fUBY"], ["created_at", Sat, 14 Sep 2013 19:51:59 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$lr4Gczete6lp2naLb3otKub8khYfMZzj.jxA4ozZ4VdkZbEg15Rpi"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sat, 14 Sep 2013 19:51:59 UTC +00:00], ["updated_at", Sat, 14 Sep 2013 19:51:59 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["authentication_token", "authtoken"], ["created_at", Sat, 14 Sep 2013 19:51:59 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$PkAb/PXkH9NZjpqJNcEBx.deDsdCIMcUF/RmegOfZkv2z1GcbdUVa"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sat, 14 Sep 2013 19:51:59 UTC +00:00], ["updated_at", Sat, 14 Sep 2013 19:51:59 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'M6zgKZir6WyexY8jxNjy' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  UPDATE "users" SET "authentication_token" = 'M6zgKZir6WyexY8jxNjy', "updated_at" = '2013-09-14 19:51:59.639957' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "token_generated_at" = '2013-09-14 19:51:59.642008', "updated_at" = '2013-09-14 19:51:59.642944' WHERE "users"."id" = 1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["authentication_token", "authtoken"], ["created_at", Sat, 14 Sep 2013 19:51:59 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$YSESR72JjjpE3mBPVrmWCuMMcgVhxgXfg8DggCFbQe66HwUvLALMC"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sat, 14 Sep 2013 19:51:59 UTC +00:00], ["updated_at", Sat, 14 Sep 2013 19:51:59 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'cP9RhMEzMSfmKKNXGyza' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (2.6ms)[0m  [1mINSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["authentication_token", "cP9RhMEzMSfmKKNXGyza"], ["created_at", Sat, 14 Sep 2013 19:52:13 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$onrydAXOdQ9k6kgoXxdbV.ZGCY5lYyRA5Trc14XqfEoR4FWJeGV6q"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sat, 14 Sep 2013 19:52:13 UTC +00:00], ["updated_at", Sat, 14 Sep 2013 19:52:13 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["authentication_token", "authtoken"], ["created_at", Sat, 14 Sep 2013 19:52:13 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$IXYLPyIICGFL4z13huBs1.4DjIdcxqMGPJwN8t3ELjXwWkeF/URD2"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sat, 14 Sep 2013 19:52:13 UTC +00:00], ["updated_at", Sat, 14 Sep 2013 19:52:13 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["authentication_token", "authtoken"], ["created_at", Sat, 14 Sep 2013 19:52:13 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$ibzNMn0DyKrvNn9Ixc3fKeR9JfvlS1K/78oCEKOeXd/IHT/Ie6iPq"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sat, 14 Sep 2013 19:52:13 UTC +00:00], ["updated_at", Sat, 14 Sep 2013 19:52:13 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'XiNmrymfozim5TKp6Dz1' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mUPDATE "users" SET "authentication_token" = 'XiNmrymfozim5TKp6Dz1', "updated_at" = '2013-09-14 19:52:13.483094' WHERE "users"."id" = 1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  UPDATE "users" SET "token_generated_at" = '2013-09-14 19:52:13.485165', "updated_at" = '2013-09-14 19:52:13.485968' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'DBN6RFschyi3YSQ3K6qx' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["authentication_token", "DBN6RFschyi3YSQ3K6qx"], ["created_at", Sat, 14 Sep 2013 19:52:13 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$goliDFfnfQGE33vw/087XuJZEIbE20cIQ3insiwQAuF4iGSAtQGXC"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sat, 14 Sep 2013 19:52:13 UTC +00:00], ["updated_at", Sat, 14 Sep 2013 19:52:13 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'SM5KrRCuwq6z1mpYcgwL' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["authentication_token", "SM5KrRCuwq6z1mpYcgwL"], ["created_at", Sat, 14 Sep 2013 19:54:03 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$.8SGgJWO5Amn4w9aAVx37uGUm4ypIQbPd5GN4xT9tsvg5iYZwKCmK"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sat, 14 Sep 2013 19:54:03 UTC +00:00], ["updated_at", Sat, 14 Sep 2013 19:54:03 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'KqDfyn73yyGCZzeT1WaM' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["authentication_token", "KqDfyn73yyGCZzeT1WaM"], ["created_at", Sat, 14 Sep 2013 19:54:03 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$JjDDylAlZf.YP6ZD/5r7VeLGVP75Pm0iaIckhKyKxut.2Cwuh3aIe"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sat, 14 Sep 2013 19:54:03 UTC +00:00], ["updated_at", Sat, 14 Sep 2013 19:54:03 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["authentication_token", "authtoken"], ["created_at", Sat, 14 Sep 2013 19:54:03 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$ZrwFWp9cE8w7LZTLgRNUm.69oUlgFG5yyW9fM2.fHulqKTWCBsLUa"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sat, 14 Sep 2013 19:54:03 UTC +00:00], ["updated_at", Sat, 14 Sep 2013 19:54:03 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["authentication_token", "authtoken"], ["created_at", Sat, 14 Sep 2013 19:54:03 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$fPznpcrkOLgqiMCWMnPzP.NV2wVQYsxELiHcNRcjhsNvoFaY9iYuW"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sat, 14 Sep 2013 19:54:03 UTC +00:00], ["updated_at", Sat, 14 Sep 2013 19:54:03 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'v2e1kcVPtYjjgmGSo38T' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  UPDATE "users" SET "authentication_token" = 'v2e1kcVPtYjjgmGSo38T', "updated_at" = '2013-09-14 19:54:03.664222' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mUPDATE "users" SET "token_generated_at" = '2013-09-14 19:54:03.666424', "updated_at" = '2013-09-14 19:54:03.667026' WHERE "users"."id" = 1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.7ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.9ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'q67CWgdDGLU5DdKmV2QP' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (2.3ms)[0m  [1mINSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["authentication_token", "q67CWgdDGLU5DdKmV2QP"], ["created_at", Sat, 14 Sep 2013 19:54:14 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$FuutDDAFYNOapSiiBOM5geZlKDX/dsQgxquIJPnGIydKzs5m4CHQG"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sat, 14 Sep 2013 19:54:14 UTC +00:00], ["updated_at", Sat, 14 Sep 2013 19:54:14 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["authentication_token", "authtoken"], ["created_at", Sat, 14 Sep 2013 19:54:14 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$AkTN08HrNQXdixwEwwJWEuUJbAPI.Ey1DWq8RAnCWOIpT3fDrcND2"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sat, 14 Sep 2013 19:54:14 UTC +00:00], ["updated_at", Sat, 14 Sep 2013 19:54:14 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'hxvDkydU25zM2niPsX7c' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mUPDATE "users" SET "authentication_token" = 'hxvDkydU25zM2niPsX7c', "updated_at" = '2013-09-14 19:54:14.643021' WHERE "users"."id" = 1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  UPDATE "users" SET "token_generated_at" = '2013-09-14 19:54:14.645238', "updated_at" = '2013-09-14 19:54:14.645851' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["authentication_token", "authtoken"], ["created_at", Sat, 14 Sep 2013 19:54:14 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$Q0qfw2p8d89b2AGHON7UeO2r0z53lMVmAWOnZKHonP2ujNJSp0l/m"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sat, 14 Sep 2013 19:54:14 UTC +00:00], ["updated_at", Sat, 14 Sep 2013 19:54:14 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'j12xAeZBtsprrCaqY95j' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["authentication_token", "j12xAeZBtsprrCaqY95j"], ["created_at", Sat, 14 Sep 2013 19:54:14 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$4A7NQ1K3LOpukuGvL6uILekpJ/eiS3k/Nesz7ne74HEJrBbbZVeUK"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sat, 14 Sep 2013 19:54:14 UTC +00:00], ["updated_at", Sat, 14 Sep 2013 19:54:14 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'hqyxdSRap6Dwn6rmZJYx' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["authentication_token", "hqyxdSRap6Dwn6rmZJYx"], ["created_at", Sat, 14 Sep 2013 20:04:41 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$ENSDIWvzOWlhZXCDipQjP.MVeShvDMrezFhnspCeE5huDttiTrlQS"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sat, 14 Sep 2013 20:04:41 UTC +00:00], ["updated_at", Sat, 14 Sep 2013 20:04:41 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'TGYVY2y8Zeosqy6nCXqm' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["authentication_token", "TGYVY2y8Zeosqy6nCXqm"], ["created_at", Sat, 14 Sep 2013 20:04:41 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$E2OH7ajpkFY5QUdPz74PzOn8B4cJXSVRqspmbLtaiM1PHRBsVLq9e"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sat, 14 Sep 2013 20:04:41 UTC +00:00], ["updated_at", Sat, 14 Sep 2013 20:04:41 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["authentication_token", "authtoken"], ["created_at", Sat, 14 Sep 2013 20:04:41 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$ZfXIVrJu3gCvDi2wHbdgbOWnykEiaXZ2SkIc2Nee80YXS4KwhrdFu"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sat, 14 Sep 2013 20:04:41 UTC +00:00], ["updated_at", Sat, 14 Sep 2013 20:04:41 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'test@user.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("authentication_token", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "token_generated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["authentication_token", "authtoken"], ["created_at", Sat, 14 Sep 2013 20:04:41 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "test@user.com"], ["encrypted_password", "$2a$04$OweTwQ9t84OOhNdui9Jp2.z2Y10idlbKwwBYYEfh6kw3OhIurQfmG"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["token_generated_at", Sat, 14 Sep 2013 20:04:41 UTC +00:00], ["updated_at", Sat, 14 Sep 2013 20:04:41 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = '2fyZsHzBZnqCd9zpEm68' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  UPDATE "users" SET "authentication_token" = '2fyZsHzBZnqCd9zpEm68', "updated_at" = '2013-09-14 20:04:41.113236' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mUPDATE "users" SET "token_generated_at" = '2013-09-14 20:04:41.115784', "updated_at" = '2013-09-14 20:04:41.116538' WHERE "users"."id" = 1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m

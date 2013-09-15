@@ -36,7 +36,7 @@ class ApplicationController < ActionController::Base
 		@user = User.find_by_authentication_token(auth_token)
 		if @user
 		  if @user.token_expired?
-		    render :status => 401, :json => {:error => "Auth token expired"}
+		    render :status => 401, :json => {:message => "Auth token expired"}
 		    return false
 		  end
 		else

@@ -23531,3 +23531,643 @@ Processing by Api::RecordsController#index as JSON
   [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'Fpn5isna6V8Sq9Y1593C' LIMIT 1
   [1m[36mRecord Load (6.0ms)[0m  [1mSELECT "records".* FROM "records" WHERE (user_id = 1) ORDER BY created_at DESC[0m
 Completed 200 OK in 119ms (Views: 111.5ms | ActiveRecord: 6.2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2013-09-14 14:39:04 -0700
+
+ActionController::RoutingError (No route matches [GET] "/users/1/edit"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/Mac/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/Mac/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/Mac/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/Mac/.rvm/gems/ruby-1.9.3-p125@miles_data/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.2ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2013-09-14 14:39:07 -0700
+
+ActionController::RoutingError (No route matches [GET] "/users/1/edit"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/Mac/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/Mac/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/Mac/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/Mac/.rvm/gems/ruby-1.9.3-p125@miles_data/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2013-09-14 14:39:13 -0700
+
+ActionController::RoutingError (No route matches [GET] "/users/1/edit"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/Mac/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/Mac/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/Mac/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/Mac/.rvm/gems/ruby-1.9.3-p125@miles_data/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2013-09-14 14:39:14 -0700
+
+ActionController::RoutingError (No route matches [GET] "/users/1/edit"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/Mac/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/Mac/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/Mac/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/Mac/.rvm/gems/ruby-1.9.3-p125@miles_data/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/api/records.json" for 192.168.1.153 at 2013-09-14 14:40:03 -0700
+Processing by Api::RecordsController#index as JSON
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."authentication_token" IS NULL LIMIT 1[0m
+Filter chain halted as :require_auth rendered or redirected
+Completed 401 Unauthorized in 134ms (Views: 0.4ms | ActiveRecord: 4.5ms)
+
+
+Started POST "/api/users/sign_in.json" for 192.168.1.153 at 2013-09-14 14:40:29 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user_login"=>{"email"=>"fake_user@test.com", "password"=>"[FILTERED]"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'fake_user@test.com' LIMIT 1
+Completed 401 Unauthorized in 81ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/users/sign_in.json" for 192.168.1.153 at 2013-09-14 14:41:31 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user_login"=>{"email"=>"fake_user@test.com", "password"=>"[FILTERED]"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'fake_user@test.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-09-14 20:02:50.105974', "current_sign_in_at" = '2013-09-14 21:41:31.448899', "current_sign_in_ip" = '192.168.1.153', "sign_in_count" = 88, "updated_at" = '2013-09-14 21:41:31.461198' WHERE "users"."id" = 1[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Completed 200 OK in 87ms (Views: 0.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/records.json" for 192.168.1.153 at 2013-09-14 14:41:31 -0700
+Processing by Api::RecordsController#index as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'Fpn5isna6V8Sq9Y1593C' LIMIT 1[0m
+  [1m[35mRecord Load (8.0ms)[0m  SELECT "records".* FROM "records" WHERE (user_id = 1) ORDER BY created_at DESC
+Completed 200 OK in 193ms (Views: 182.6ms | ActiveRecord: 8.5ms)
+
+
+Started POST "/api/users/sign_in.json" for 192.168.1.153 at 2013-09-14 14:42:16 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user_login"=>{"email"=>"fake_user@test.com", "password"=>"[FILTERED]"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'fake_user@test.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-09-14 21:41:31.448899', "current_sign_in_at" = '2013-09-14 21:42:16.725519', "last_sign_in_ip" = '192.168.1.153', "sign_in_count" = 89, "updated_at" = '2013-09-14 21:42:16.726351' WHERE "users"."id" = 1
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'n4sJHTnq9U4FwzqcdXWY' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "authentication_token" = 'n4sJHTnq9U4FwzqcdXWY', "updated_at" = '2013-09-14 21:42:16.731346' WHERE "users"."id" = 1
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mUPDATE "users" SET "token_generated_at" = '2013-09-14 21:42:16.733038', "updated_at" = '2013-09-14 21:42:16.734948' WHERE "users"."id" = 1[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Completed 200 OK in 148ms (Views: 0.4ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/api/records.json" for 192.168.1.153 at 2013-09-14 14:42:16 -0700
+Processing by Api::RecordsController#index as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'n4sJHTnq9U4FwzqcdXWY' LIMIT 1[0m
+  [1m[35mRecord Load (5.6ms)[0m  SELECT "records".* FROM "records" WHERE (user_id = 1) ORDER BY created_at DESC
+Completed 200 OK in 152ms (Views: 143.4ms | ActiveRecord: 6.1ms)
+
+
+Started POST "/api/users/sign_in.json" for 192.168.1.153 at 2013-09-14 14:43:29 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user_login"=>{"email"=>"fake_user@test.com", "password"=>"[FILTERED]"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'fake_user@test.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-09-14 21:42:16.725519', "current_sign_in_at" = '2013-09-14 21:43:29.420281', "sign_in_count" = 90, "updated_at" = '2013-09-14 21:43:29.421118' WHERE "users"."id" = 1
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'jDAoKiFL8KobbHXVXQu1' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "authentication_token" = 'jDAoKiFL8KobbHXVXQu1', "updated_at" = '2013-09-14 21:43:29.426361' WHERE "users"."id" = 1
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "token_generated_at" = '2013-09-14 21:43:29.428175', "updated_at" = '2013-09-14 21:43:29.428694' WHERE "users"."id" = 1[0m
+  [1m[35m (0.6ms)[0m  commit transaction
+Completed 200 OK in 78ms (Views: 0.3ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/api/records.json" for 192.168.1.153 at 2013-09-14 14:43:29 -0700
+Processing by Api::RecordsController#index as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'jDAoKiFL8KobbHXVXQu1' LIMIT 1[0m
+  [1m[35mRecord Load (9.0ms)[0m  SELECT "records".* FROM "records" WHERE (user_id = 1) ORDER BY created_at DESC
+Completed 200 OK in 130ms (Views: 117.8ms | ActiveRecord: 9.4ms)
+Connecting to database specified by database.yml
+
+
+Started POST "/api/users/sign_in" for 127.0.0.1 at 2013-09-14 14:48:32 -0700
+Processing by Api::SessionsController#create as HTML
+  Parameters: {"user_login"=>{"email"=>"fake_user@test.com", "password"=>"[FILTERED]"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'fake_user@test.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-09-14 21:43:29.420281', "current_sign_in_at" = '2013-09-14 21:48:32.601790', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 91, "updated_at" = '2013-09-14 21:48:32.602617' WHERE "users"."id" = 1[0m
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'EfwXsiqXeqmpyQP2g8DQ' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "authentication_token" = 'EfwXsiqXeqmpyQP2g8DQ', "updated_at" = '2013-09-14 21:48:32.607769' WHERE "users"."id" = 1[0m
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  UPDATE "users" SET "token_generated_at" = '2013-09-14 21:48:32.609562', "updated_at" = '2013-09-14 21:48:32.611049' WHERE "users"."id" = 1
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 106ms (Views: 0.3ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/api/records.json" for 192.168.1.153 at 2013-09-14 14:49:08 -0700
+Processing by Api::RecordsController#index as JSON
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'jDAoKiFL8KobbHXVXQu1' LIMIT 1
+Filter chain halted as :require_auth rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/users/sign_in.json" for 127.0.0.1 at 2013-09-14 14:50:28 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user_login"=>{"email"=>"fake_user@test.com", "password"=>"[FILTERED]"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'fake_user@test.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-09-14 21:48:32.601790', "current_sign_in_at" = '2013-09-14 21:50:28.152832', "last_sign_in_ip" = '127.0.0.1', "sign_in_count" = 92, "updated_at" = '2013-09-14 21:50:28.153547' WHERE "users"."id" = 1[0m
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'E21xkBsqmZ4cemR8rZSM' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "authentication_token" = 'E21xkBsqmZ4cemR8rZSM', "updated_at" = '2013-09-14 21:50:28.159014' WHERE "users"."id" = 1[0m
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "token_generated_at" = '2013-09-14 21:50:28.161044', "updated_at" = '2013-09-14 21:50:28.161565' WHERE "users"."id" = 1
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 79ms (Views: 0.3ms | ActiveRecord: 6.0ms)
+
+
+Started POST "/api/users/sign_in.json" for 127.0.0.1 at 2013-09-14 14:53:05 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user_login"=>{"email"=>"fake_user@test.com", "password"=>"[FILTERED]"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'fake_user@test.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-09-14 21:50:28.152832', "current_sign_in_at" = '2013-09-14 21:53:05.219482', "sign_in_count" = 93, "updated_at" = '2013-09-14 21:53:05.220280' WHERE "users"."id" = 1
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'aB1xpSJzkcA3vZTGM3x7' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "authentication_token" = 'aB1xpSJzkcA3vZTGM3x7', "updated_at" = '2013-09-14 21:53:05.225810' WHERE "users"."id" = 1
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "token_generated_at" = '2013-09-14 21:53:05.227657', "updated_at" = '2013-09-14 21:53:05.228120' WHERE "users"."id" = 1[0m
+  [1m[35m (1.1ms)[0m  commit transaction
+Completed 200 OK in 78ms (Views: 0.2ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/api/records.json" for 192.168.1.153 at 2013-09-14 14:53:29 -0700
+Processing by Api::RecordsController#index as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'jDAoKiFL8KobbHXVXQu1' LIMIT 1[0m
+Filter chain halted as :require_auth rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/users/sign_in.json" for 192.168.1.153 at 2013-09-14 14:54:10 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user_login"=>{"email"=>"fake_user@test.com", "password"=>"[FILTERED]"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'fake_user@test.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-09-14 21:53:05.219482', "current_sign_in_at" = '2013-09-14 21:54:10.884293', "current_sign_in_ip" = '192.168.1.153', "sign_in_count" = 94, "updated_at" = '2013-09-14 21:54:10.885093' WHERE "users"."id" = 1
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'G9kXknRJpDRhMdwhvt3e' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "authentication_token" = 'G9kXknRJpDRhMdwhvt3e', "updated_at" = '2013-09-14 21:54:10.889769' WHERE "users"."id" = 1
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "token_generated_at" = '2013-09-14 21:54:10.891446', "updated_at" = '2013-09-14 21:54:10.891891' WHERE "users"."id" = 1[0m
+  [1m[35m (1.1ms)[0m  commit transaction
+Completed 200 OK in 74ms (Views: 0.3ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/api/records.json" for 192.168.1.153 at 2013-09-14 14:54:10 -0700
+Processing by Api::RecordsController#index as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'G9kXknRJpDRhMdwhvt3e' LIMIT 1[0m
+  [1m[35mRecord Load (5.1ms)[0m  SELECT "records".* FROM "records" WHERE (user_id = 1) ORDER BY created_at DESC
+Completed 200 OK in 161ms (Views: 154.3ms | ActiveRecord: 5.3ms)
+
+
+Started POST "/api/users/sign_in.json" for 192.168.1.153 at 2013-09-14 14:57:55 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user_login"=>{"email"=>"fake_user@test.com", "password"=>"[FILTERED]"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'fake_user@test.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-09-14 21:54:10.884293', "current_sign_in_at" = '2013-09-14 21:57:55.430142', "last_sign_in_ip" = '192.168.1.153', "sign_in_count" = 95, "updated_at" = '2013-09-14 21:57:55.430950' WHERE "users"."id" = 1[0m
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'p7odndt5yq3KPZ7ALwGA' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "authentication_token" = 'p7odndt5yq3KPZ7ALwGA', "updated_at" = '2013-09-14 21:57:55.436639' WHERE "users"."id" = 1[0m
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "token_generated_at" = '2013-09-14 21:57:55.438461', "updated_at" = '2013-09-14 21:57:55.439040' WHERE "users"."id" = 1
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 76ms (Views: 0.3ms | ActiveRecord: 6.1ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/api/records.json" for 192.168.1.153 at 2013-09-14 16:06:05 -0700
+Processing by Api::RecordsController#index as JSON
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" IS NULL LIMIT 1
+Filter chain halted as :require_auth rendered or redirected
+Completed 401 Unauthorized in 32ms (Views: 0.3ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/api/users/sign_in.json" for 192.168.1.153 at 2013-09-14 16:06:30 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user_login"=>{"email"=>"fake_user@test.com", "password"=>"[FILTERED]"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'fake_user@test.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-09-14 21:57:55.430142', "current_sign_in_at" = '2013-09-14 23:06:30.418183', "sign_in_count" = 96, "updated_at" = '2013-09-14 23:06:30.419506' WHERE "users"."id" = 1[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Completed 200 OK in 70ms (Views: 0.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/records.json" for 192.168.1.153 at 2013-09-14 16:06:54 -0700
+Processing by Api::RecordsController#index as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'p7odndt5yq3KPZ7ALwGA' LIMIT 1[0m
+  [1m[35mRecord Load (5.2ms)[0m  SELECT "records".* FROM "records" WHERE (user_id = 1) ORDER BY created_at DESC
+Completed 200 OK in 131ms (Views: 123.1ms | ActiveRecord: 5.6ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/api/records.json" for 192.168.1.153 at 2013-09-14 16:09:19 -0700
+Processing by Api::RecordsController#index as JSON
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."authentication_token" IS NULL LIMIT 1[0m
+Filter chain halted as :require_auth rendered or redirected
+Completed 401 Unauthorized in 114ms (Views: 0.3ms | ActiveRecord: 4.9ms)
+
+
+Started POST "/api/users/sign_in.json" for 192.168.1.153 at 2013-09-14 16:09:42 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user_login"=>{"email"=>"fake_user@test.com", "password"=>"[FILTERED]"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'fake_user@test.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-09-14 23:06:30.418183', "current_sign_in_at" = '2013-09-14 23:09:42.932780', "sign_in_count" = 97, "updated_at" = '2013-09-14 23:09:42.938122' WHERE "users"."id" = 1
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 111ms (Views: 0.3ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/api/users/sign_in.json" for 192.168.1.153 at 2013-09-14 16:09:57 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user_login"=>{"email"=>"fake_user@test.com", "password"=>"[FILTERED]"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'fake_user@test.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-09-14 23:09:42.932780', "current_sign_in_at" = '2013-09-14 23:09:57.459656', "sign_in_count" = 98, "updated_at" = '2013-09-14 23:09:57.460512' WHERE "users"."id" = 1
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 71ms (Views: 0.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/records.json" for 192.168.1.153 at 2013-09-14 16:09:57 -0700
+Processing by Api::RecordsController#index as JSON
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'p7odndt5yq3KPZ7ALwGA' LIMIT 1
+  [1m[36mRecord Load (7.9ms)[0m  [1mSELECT "records".* FROM "records" WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Completed 200 OK in 213ms (Views: 202.9ms | ActiveRecord: 8.3ms)
+Connecting to database specified by database.yml
+
+
+Started POST "/api/users/sign_in.json" for 192.168.1.153 at 2013-09-14 16:16:06 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user_login"=>{"email"=>"fake_user@test.com", "password"=>"[FILTERED]"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'fake_user@test.com' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-09-14 23:09:57.459656', "current_sign_in_at" = '2013-09-14 23:16:06.745442', "sign_in_count" = 99, "updated_at" = '2013-09-14 23:16:06.746145' WHERE "users"."id" = 1
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 70ms (Views: 0.2ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/api/records.json" for 192.168.1.153 at 2013-09-14 16:16:06 -0700
+Processing by Api::RecordsController#index as JSON
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'p7odndt5yq3KPZ7ALwGA' LIMIT 1
+  [1m[36mRecord Load (4.9ms)[0m  [1mSELECT "records".* FROM "records" WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Completed 200 OK in 135ms (Views: 128.7ms | ActiveRecord: 5.2ms)
+
+
+Started POST "/api/users/sign_in.json" for 192.168.1.153 at 2013-09-14 16:19:34 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user_login"=>{"email"=>"fake_user@test.com", "password"=>"[FILTERED]"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'fake_user@test.com' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-09-14 23:16:06.745442', "current_sign_in_at" = '2013-09-14 23:19:34.436160', "sign_in_count" = 100, "updated_at" = '2013-09-14 23:19:34.436886' WHERE "users"."id" = 1
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 70ms (Views: 0.2ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/api/records.json" for 192.168.1.153 at 2013-09-14 16:19:45 -0700
+Processing by Api::RecordsController#index as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'p7odndt5yq3KPZ7ALwGA' LIMIT 1
+  [1m[36mRecord Load (5.6ms)[0m  [1mSELECT "records".* FROM "records" WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Completed 200 OK in 141ms (Views: 133.0ms | ActiveRecord: 5.8ms)
+
+
+Started POST "/api/users/sign_in.json" for 192.168.1.153 at 2013-09-14 16:23:17 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user_login"=>{"email"=>"fake_user@test.com", "password"=>"[FILTERED]"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'fake_user@test.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-09-14 23:19:34.436160', "current_sign_in_at" = '2013-09-14 23:23:17.962104', "sign_in_count" = 101, "updated_at" = '2013-09-14 23:23:17.962804' WHERE "users"."id" = 1
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 70ms (Views: 0.2ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/api/records.json" for 192.168.1.153 at 2013-09-14 16:23:17 -0700
+Processing by Api::RecordsController#index as JSON
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'p7odndt5yq3KPZ7ALwGA' LIMIT 1
+  [1m[36mRecord Load (5.2ms)[0m  [1mSELECT "records".* FROM "records" WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Completed 200 OK in 133ms (Views: 126.3ms | ActiveRecord: 5.4ms)
+
+
+Started POST "/api/users/sign_in.json" for 192.168.1.153 at 2013-09-14 16:27:14 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user_login"=>{"email"=>"fake_user@test.com", "password"=>"[FILTERED]"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'fake_user@test.com' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-09-14 23:23:17.962104', "current_sign_in_at" = '2013-09-14 23:27:14.591972', "sign_in_count" = 102, "updated_at" = '2013-09-14 23:27:14.592665' WHERE "users"."id" = 1
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 70ms (Views: 0.3ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/api/records.json" for 192.168.1.153 at 2013-09-14 16:27:31 -0700
+Processing by Api::RecordsController#index as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'p7odndt5yq3KPZ7ALwGA' LIMIT 1
+  [1m[36mRecord Load (36.0ms)[0m  [1mSELECT "records".* FROM "records" WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Completed 200 OK in 161ms (Views: 122.5ms | ActiveRecord: 36.3ms)
+
+
+Started GET "/api/records.json" for 127.0.0.1 at 2013-09-14 16:36:03 -0700
+Processing by Api::RecordsController#index as JSON
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'p7odndt5yq3KPZ7ALwGA' LIMIT 1
+  [1m[36mRecord Load (5.8ms)[0m  [1mSELECT "records".* FROM "records" WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Completed 200 OK in 139ms (Views: 131.3ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/api/records.json" for 192.168.1.153 at 2013-09-14 16:38:16 -0700
+Processing by Api::RecordsController#index as JSON
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'p7odndt5yq3KPZ7ALwGA' LIMIT 1
+  [1m[36mRecord Load (5.6ms)[0m  [1mSELECT "records".* FROM "records" WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Completed 200 OK in 136ms (Views: 128.2ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/api/records.json" for 192.168.1.153 at 2013-09-14 16:40:51 -0700
+Processing by Api::RecordsController#index as JSON
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'p7odndt5yq3KPZ7ALwGA' LIMIT 1
+  [1m[36mRecord Load (5.0ms)[0m  [1mSELECT "records".* FROM "records" WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Completed 200 OK in 131ms (Views: 124.4ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/api/records.json" for 192.168.1.153 at 2013-09-14 16:43:27 -0700
+Processing by Api::RecordsController#index as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'p7odndt5yq3KPZ7ALwGA' LIMIT 1
+  [1m[36mRecord Load (9.1ms)[0m  [1mSELECT "records".* FROM "records" WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Completed 200 OK in 178ms (Views: 166.6ms | ActiveRecord: 9.5ms)
+
+
+Started POST "/api/users/sign_in.json" for 192.168.1.153 at 2013-09-14 16:44:24 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user_login"=>{"email"=>"fake_user@test.com", "password"=>"[FILTERED]"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'fake_user@test.com' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-09-14 23:27:14.591972', "current_sign_in_at" = '2013-09-14 23:44:24.360721', "sign_in_count" = 103, "updated_at" = '2013-09-14 23:44:24.361378' WHERE "users"."id" = 1
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 70ms (Views: 0.2ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/api/records.json" for 192.168.1.153 at 2013-09-14 16:44:24 -0700
+Processing by Api::RecordsController#index as JSON
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'p7odndt5yq3KPZ7ALwGA' LIMIT 1
+  [1m[36mRecord Load (6.1ms)[0m  [1mSELECT "records".* FROM "records" WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Completed 200 OK in 136ms (Views: 128.5ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/api/records.json" for 192.168.1.153 at 2013-09-14 16:44:24 -0700
+Processing by Api::RecordsController#index as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'p7odndt5yq3KPZ7ALwGA' LIMIT 1
+  [1m[36mRecord Load (6.6ms)[0m  [1mSELECT "records".* FROM "records" WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Completed 200 OK in 139ms (Views: 130.3ms | ActiveRecord: 6.9ms)
+
+
+Started POST "/api/users/sign_in.json" for 192.168.1.153 at 2013-09-14 16:45:21 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user_login"=>{"email"=>"fake_user@test.com", "password"=>"[FILTERED]"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'fake_user@test.com' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-09-14 23:44:24.360721', "current_sign_in_at" = '2013-09-14 23:45:21.514098', "sign_in_count" = 104, "updated_at" = '2013-09-14 23:45:21.514797' WHERE "users"."id" = 1[0m
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'GUeFstaC649YaTDfJjH6' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "authentication_token" = 'GUeFstaC649YaTDfJjH6', "updated_at" = '2013-09-14 23:45:21.519681' WHERE "users"."id" = 1[0m
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "token_generated_at" = '2013-09-14 23:45:21.521363', "updated_at" = '2013-09-14 23:45:21.522688' WHERE "users"."id" = 1
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 133ms (Views: 0.3ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/api/records.json" for 192.168.1.153 at 2013-09-14 16:45:21 -0700
+Processing by Api::RecordsController#index as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'GUeFstaC649YaTDfJjH6' LIMIT 1
+  [1m[36mRecord Load (5.8ms)[0m  [1mSELECT "records".* FROM "records" WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Completed 200 OK in 155ms (Views: 145.7ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/api/records.json" for 192.168.1.153 at 2013-09-14 16:45:21 -0700
+Processing by Api::RecordsController#index as JSON
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'GUeFstaC649YaTDfJjH6' LIMIT 1
+  [1m[36mRecord Load (4.9ms)[0m  [1mSELECT "records".* FROM "records" WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Completed 200 OK in 144ms (Views: 136.7ms | ActiveRecord: 5.1ms)
+
+
+Started POST "/api/users/sign_in.json" for 192.168.1.153 at 2013-09-14 16:47:27 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user_login"=>{"email"=>"fake_user@test.com", "password"=>"[FILTERED]"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'fake_user@test.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-09-14 23:45:21.514098', "current_sign_in_at" = '2013-09-14 23:47:27.335691', "sign_in_count" = 105, "updated_at" = '2013-09-14 23:47:27.336418' WHERE "users"."id" = 1[0m
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = '1zqxqF1zhLXV4CYYEaYi' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "authentication_token" = '1zqxqF1zhLXV4CYYEaYi', "updated_at" = '2013-09-14 23:47:27.341638' WHERE "users"."id" = 1[0m
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "token_generated_at" = '2013-09-14 23:47:27.343343', "updated_at" = '2013-09-14 23:47:27.343842' WHERE "users"."id" = 1
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 76ms (Views: 0.3ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/api/records.json" for 192.168.1.153 at 2013-09-14 16:47:27 -0700
+Processing by Api::RecordsController#index as JSON
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = '1zqxqF1zhLXV4CYYEaYi' LIMIT 1
+  [1m[36mRecord Load (6.2ms)[0m  [1mSELECT "records".* FROM "records" WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Completed 200 OK in 140ms (Views: 131.7ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/api/records.json" for 192.168.1.153 at 2013-09-14 16:47:27 -0700
+Processing by Api::RecordsController#index as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = '1zqxqF1zhLXV4CYYEaYi' LIMIT 1
+  [1m[36mRecord Load (5.1ms)[0m  [1mSELECT "records".* FROM "records" WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Completed 200 OK in 139ms (Views: 131.7ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/api/records.json" for 192.168.1.153 at 2013-09-14 16:48:48 -0700
+Processing by Api::RecordsController#index as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = '1zqxqF1zhLXV4CYYEaYi' LIMIT 1
+Filter chain halted as :require_auth rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/records.json" for 192.168.1.153 at 2013-09-14 16:51:59 -0700
+Processing by Api::RecordsController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = '1zqxqF1zhLXV4CYYEaYi' LIMIT 1[0m
+Filter chain halted as :require_auth rendered or redirected
+Completed 401 Unauthorized in 28ms (Views: 0.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/records.json" for 192.168.1.153 at 2013-09-14 16:54:06 -0700
+Processing by Api::RecordsController#index as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = '1zqxqF1zhLXV4CYYEaYi' LIMIT 1
+Filter chain halted as :require_auth rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/records.json" for 192.168.1.153 at 2013-09-14 17:00:57 -0700
+Processing by Api::RecordsController#index as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = '1zqxqF1zhLXV4CYYEaYi' LIMIT 1[0m
+Filter chain halted as :require_auth rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/records.json" for 192.168.1.153 at 2013-09-14 17:05:23 -0700
+Processing by Api::RecordsController#index as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = '1zqxqF1zhLXV4CYYEaYi' LIMIT 1
+Filter chain halted as :require_auth rendered or redirected
+Completed 401 Unauthorized in 26ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/records.json" for 192.168.1.153 at 2013-09-14 17:06:33 -0700
+Processing by Api::RecordsController#index as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = '1zqxqF1zhLXV4CYYEaYi' LIMIT 1[0m
+Filter chain halted as :require_auth rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/records.json" for 192.168.1.153 at 2013-09-14 17:07:12 -0700
+Processing by Api::RecordsController#index as JSON
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = '1zqxqF1zhLXV4CYYEaYi' LIMIT 1
+Filter chain halted as :require_auth rendered or redirected
+Completed 401 Unauthorized in 54ms (Views: 0.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/records.json" for 192.168.1.153 at 2013-09-14 17:08:23 -0700
+
+SyntaxError (/Users/Mac/Sites/miles_data/app/controllers/application_controller.rb:39: syntax error, unexpected '}', expecting tASSOC):
+  app/controllers/api/records_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/Mac/.rvm/gems/ruby-1.9.3-p125@miles_data/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Users/Mac/.rvm/gems/ruby-1.9.3-p125@miles_data/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/Mac/.rvm/gems/ruby-1.9.3-p125@miles_data/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.8ms)
+
+
+Started GET "/api/records.json" for 192.168.1.153 at 2013-09-14 17:09:03 -0700
+Processing by Api::RecordsController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."authentication_token" = '1zqxqF1zhLXV4CYYEaYi' LIMIT 1[0m
+Filter chain halted as :require_auth rendered or redirected
+Completed 401 Unauthorized in 29ms (Views: 0.3ms | ActiveRecord: 0.7ms)

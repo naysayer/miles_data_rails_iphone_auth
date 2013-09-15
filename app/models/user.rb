@@ -12,7 +12,7 @@ class User < ActiveRecord::Base
   before_create :set_default_token_time
 
   def token_expired?
-    self.token_generated_at.blank? || self.authentication_token.blank? || self.token_generated_at < 1.week.ago
+    self.token_generated_at.blank? || self.authentication_token.blank? || self.token_generated_at < 1.minute.ago
   end
 
   def self.generate_new_auth_token(resource)

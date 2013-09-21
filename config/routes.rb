@@ -10,6 +10,7 @@ Milesdatas::Application.routes.draw do
   namespace :api do
     devise_for :users
     resources :records
+    match '/sessions/check_auth_token_validity', :controller => 'sessions', :action => 'check_auth_token_validity', :via => [:get]
   end 
   # The priority is based upon order of creation:
   # first created -> highest priority.

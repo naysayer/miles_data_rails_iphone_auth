@@ -2,7 +2,7 @@ class Api::SessionsController < Api::BaseApiController
 	prepend_before_filter :require_no_authentication, :only => [:create ]
 	  
 	  before_filter :ensure_params_exist, except: [:destroy]
-	  before_filter :require_auth, only: [:destroy]
+	  before_filter :require_auth, only: [:destroy, :check_auth_token_validity]
 	  respond_to :json
 	  
 	  def create
@@ -22,6 +22,10 @@ class Api::SessionsController < Api::BaseApiController
 	  def destroy
 	    sign_out(@user)
 	    redirect_to new_api_user_session_path(method: :get)
+	  end
+
+	  def check_auth_token_validity
+	  	render :json=> {:success=>true, :message => "Credentials Valid"}
 	  end
 	 
 	  protected
